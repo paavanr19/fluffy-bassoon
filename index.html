@@ -16,13 +16,32 @@
             <div id="clock"></div>
         </div>
         <div class="main">
+            <div class="widget">
+                <p>Widget 01</p>
+            </div>
+
+            <div class="widget">
+                <p>Widget 02</p>
+            </div>
+
+            <div class="widget">
+                <p>Widget 02</p>
+            </div>
            
         </div>
     </div>
 </body>
 
 <script>
+    var sp ='/';
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1;
+    var yyyy = today.getYear();
 
+if (dd<10) dd = '0'+dd
+if (mm<10) mm = '0'+mm
+
+$('#date').html(dd+sp+mm+sp+yyyy);
 </script>
 </html>
 
